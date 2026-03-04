@@ -23,12 +23,14 @@
     public class ItemDTO
     {
         public int sn { get; set; }
-        public int lineItemId { get; set; }
+        public int lineitemId { get; set; }
+        public int articleId { get; set; }
         public string articleCode { get; set; } = string.Empty;
         public string articleName { get; set; } = string.Empty;
         public decimal qty { get; set; }
         public decimal price { get; set; }
         public decimal total { get; set; }
+        public string? unit { get; set; }
 
     }
     public class TermsDTO
@@ -66,5 +68,7 @@
         public decimal voucherGrandTotal { get; set; }
         public string? voucherPaymentInfo { get; set; }
         public string? voucherPreparedBy { get; set; }
+        // additional free-form remark field
+        public string? voucherRemark { get; set; }
     }
 }
