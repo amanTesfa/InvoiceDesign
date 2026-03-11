@@ -1,0 +1,28 @@
+@using DevExpress.AspNetCore;
+@using DevExpress.XtraPrinting.Drawing;
+@using DevExpress.XtraReports.UI;
+@using System.Drawing;
+@model EnvoiceProject.Models.EnvoiceDTO
+
+@{
+    ViewData["Title"] = "Invoice Preview";
+    var report = new XtraReport();
+    try
+    {
+        report = new WebApplication1.prtInvoice(Model);
+        report.Watermark.TextDirection = DirectionMode.ForwardDiagonal;
+        report.Watermark.ShowBehind = false;
+        report.Watermark.Font = new System.Drawing.Font("calibri", 80, FontStyle.Bold);
+        report.Watermark.ForeColor = Color.LightGray;
+        report.Watermark.TextTransparency = 100;
+        report.Watermark.Text = "1st Copy";
+    }
+    catch
+    {
+    }
+   
+}
+<div class="container" style="margin:auto;width:75%">
+<h2 class="mb-3">Invoice Preview</h2>
+@Html.DevExpress().WebDocumentViewer("Preview").Height("1000px").Width("100%").Bind(report)
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "envoiceproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    //"@devexpress/analytics-core": "25.2-stable",
+    "bootstrap": "^4.3.1"
+    //"devexpress-reporting": "25.2-stable"
+  }
+}

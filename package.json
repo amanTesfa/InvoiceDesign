@@ -1,17 +1,25 @@
 {
-  "name": "webapplication1",
+  "name": "einvoicedesign",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open-wwwroot": "cd EnvoiceProject/wwwroot && dir",
+    "install-devextreme-wwwroot": "cd EnvoiceProject/wwwroot && npm install devextreme"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@devexpress/analytics-core": "25.2-stable",
     "@tailwindcss/cli": "^4.1.18",
-    "jquery": "^3.7.1",
+    "bootstrap": "^4.3.1",
+    "devextreme-dist": "25.2-stable",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@types/jqueryui": "^1.12.24",
+    "@types/node": "^25.4.0"
   }
 }

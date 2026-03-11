@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Invoice Submission Form</title>
+    <link href="~/designer_file/css/vendor.css" rel="stylesheet" />
+    <link href="~/designer_file/css/dx.light.css" rel="stylesheet" />
+    <script src="~/designer_file/js/jquery.min.js"></script>
+    <script src="~/designer_file/js/knockout-latest.js"></script>
+    <script src="~/designer_file/js/vendor.js"></script>
+    <script src="~/designer_file/js/dx-analytics-core.js"></script>
+    <script src="~/designer_file/js/dx-webdocumentviewer.js"></script>
+    <link href="~/designer_file/css/dx-analytics.common.css" rel="stylesheet" />
+    <link href="~/designer_file/css/dx-analytics.light.css" rel="stylesheet" />
+    <link href="~/designer_file/css/dx-webdocumentviewer.css" rel="stylesheet" />
+</head>
+
+<body class="min-h-screen min-w-screen" data-theme="forest">
+    <header>
+
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
