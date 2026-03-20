@@ -45,8 +45,6 @@ namespace WebApplication1
             }
             String val = "", wholeNo = numb, points = "", andStr = "", pointStr = "";
             String endStr = "ETB Only";
-
-            // String beginStr = (isNegative)
             try
             {
                 int decimalPlace = numb.IndexOf(".");
@@ -56,7 +54,7 @@ namespace WebApplication1
                     points = numb.Substring(decimalPlace + 1);
                     if (Convert.ToInt32(points) > 0)
                     {
-                        andStr = "Birr and ";// just to separate whole numbers from points/cents
+                        andStr = "Birr and ";
                         endStr = "Cents Only";
                         pointStr = translateCents(points);
                     }
@@ -75,17 +73,16 @@ namespace WebApplication1
             string word = "";
             try
             {
-                bool beginsZero = false;//tests for 0XX
-                bool isDone = false;//test if already translated
+                bool beginsZero = false;
+                bool isDone = false;
                 double dblAmt = (Convert.ToDouble(number));
-                //if ((dblAmt > 0) && number.StartsWith("0"))
                 if (dblAmt > 0)
-                {//test for zero or digit zero in a nuemric
+                {
                     beginsZero = number.StartsWith("0");
                     number = number.TrimStart(new char[] { '0' });
                     int numDigits = number.Length;
-                    int pos = 0;//store digit grouping
-                    String place = "";//digit grouping name:hundres,thousand,etc...
+                    int pos = 0;
+                    String place = "";
                     switch (numDigits)
                     {
                         case 1://ones' range
@@ -122,12 +119,10 @@ namespace WebApplication1
                             break;
                     }
                     if (!isDone)
-                    {//if transalation is not done, continue...(Recursion comes in now!!)
+                    {
                         word = translateWholeNumber(number.Substring(0, pos)) + place + translateWholeNumber(number.Substring(pos));
-                        //check for trailing zeros
                         if (beginsZero) word = " and " + word.Trim();
                     }
-                    //ignore digit grouping names
                     if (word.Trim().Equals(place.Trim())) word = "";
                 }
                 else
@@ -252,10 +247,7 @@ namespace WebApplication1
         private String translateCents(String cents)
         {
             String cts = "", digit = "", engOne = "";
-            // for (int i = 0; i < cents.Length; i++)
-            //{
             bool isDone = false;
-            //digit = cents[i].ToString();
 
             if (digit.Equals("0"))
             {
