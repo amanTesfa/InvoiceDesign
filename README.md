@@ -1,15 +1,19 @@
 # EinvoiceDesign
 
 ## Overview
-EinvoiceDesign is a .NET 6 web application for electronic invoice management and design. It includes features for invoice creation, preview, and document viewing, with modern frontend assets and DevExtreme integration.
+
+EinvoiceDesign is a .NET 6 web application for electronic invoice management and design. It includes features for invoice preparation document viewing, with frontend assets and DevExtreme controls.
 
 ## Features
+
 - Invoice creation and management
-- Invoice preview and printing
+- Invoice preview and export options with printing functionalities
 - Custom web document viewer
 - Modern UI with DevExtreme Combos
+
 ## Project Structure
-- `EInvoiceProject/` — Main application source
+
+- `InvoiceProject/` — Main application source
   - `Controllers/` — MVC controllers
   - `Models/` — Data models
   - `Views/` — Razor views for UI
@@ -18,35 +22,34 @@ EinvoiceDesign is a .NET 6 web application for electronic invoice management and
     - `package.json` — Frontend dependencies
     - `package-lock.json` — Dependency lock file
     - `favicon.ico` — Site icon
-- `EInvoiceProject.sln` — Solution file
+- `InvoiceProject.sln` — Solution file
 
 ## Getting Started
 
 ### Prerequisites
+
 - .NET 6 SDK
 - Node.js (for frontend assets, if needed)
 
 ### Setup
+
 1. Clone the repository:
    ```
-   git clone https://github.com/amanTesfa/EinvoiceDesign.git
+   git clone https://github.com/amanTesfa/InvoiceDesign.git
    ```
 2. Restore .NET dependencies:
+
    ```
    dotnet restore
    ```
-3. (Optional) Install frontend dependencies:
+
+3. Build and run the project:
    ```
-   cd EInvoiceProject/wwwroot
-   npm install
-   ```
-4. Build and run the project:
-   ```
-   dotnet run --project EInvoiceProject/EInvoiceProject.csproj
+   dotnet run --project InvoiceProject/InvoiceProject.csproj
    ```
 
 **Technologies Used**
-  
+
 - HTML, CSS, Javascript, Jquery, Bootstrap, Devextreme controls
 - C# MVC with razor pages
 - Devexpress report designer
