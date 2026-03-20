@@ -1,8 +1,8 @@
-# EinvoiceDesign
+# Invoice Design
 
 ## Overview
 
-EinvoiceDesign is a .NET 6 web application for electronic invoice management and design. It includes features for invoice preparation document viewing, with frontend assets and DevExtreme controls.
+Invoice Design is a .NET 6 web application for invoice management and design. It includes features for invoice preparation document viewing, with frontend assets and DevExtreme controls.
 
 ## Features
 
