@@ -2,14 +2,13 @@
 
 ## Overview
 
-Invoice Design is a .NET 6 web application for invoice management and design. It includes features for invoice preparation document viewing, with frontend assets and DevExtreme controls.
+Invoice Design is a .NET 6 web application for managing and designing invoices. It includes features for invoice preparation and document viewing, using frontend assets and DevExtreme controls.
 
 ## Features
 
 - Invoice creation and management
-- Invoice preview and export options with printing functionalities
+- Invoice preview, export options, and printing functionality
 - Custom web document viewer
-- Modern UI with DevExtreme Combos
 
 ## Project Structure
 
@@ -50,6 +49,6 @@ Invoice Design is a .NET 6 web application for invoice management and design. It
 
 **Technologies Used**
 
-- HTML, CSS, Javascript, Jquery, Bootstrap, Devextreme controls
+- HTML5, CSS3, Javascript, Jquery, Bootstrap, Devextreme controls
 - C# MVC with razor pages
 - Devexpress report designer
